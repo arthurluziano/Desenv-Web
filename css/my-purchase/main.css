@@ -1,0 +1,281 @@
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 100%;
+  height: 700px;
+
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 1215px;
+  height: 600px;
+
+  background-color: #2e2e2e;
+
+  border-radius: 1rem;
+}
+
+.my-cart {
+  width: 850px;
+  height: 100%;
+
+  padding: 1rem;
+
+  border-right: 1px solid #696969;
+}
+
+.my-cart h2 {
+  padding-bottom: 16px;
+
+  color: #47bbff;
+}
+
+.cart-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  width: 100%;
+  height: 400px;
+
+  gap: 1.5rem;
+
+  background-color: #f8f8ff;
+  border-radius: 1rem;
+}
+
+.cart-products img {
+  width: 128px;
+  height: 128px;
+
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  height: 170px;
+
+  gap: 1.5rem;
+
+  border-bottom: 1px solid #4444447a;
+}
+
+.product:last-child {
+  border: none;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.description label {
+  margin-bottom: 1rem;
+
+  color: #333333;
+}
+
+.description p:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 0.2rem 0.5rem;
+
+  border: 1px solid #1a1a1a;
+  border-radius: 0.5rem;
+}
+
+.description i {
+  cursor: pointer;
+
+  padding: 0.5rem;
+
+  border-radius: 50%;
+}
+
+.description i:hover {
+  background-color: #bebebea9;
+}
+
+.bx-x {
+  margin-left: auto;
+  margin-bottom: 100px;
+
+  font-size: 1.75rem;
+
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.bx-x:hover {
+  color: #ff4747;
+  border-color: #ff4747;
+}
+
+.discount {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.discount input {
+  width: 250px;
+  padding: 0.5rem;
+
+  padding-left: 1.65rem;
+
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: #464646;
+  color: #f8f8ff;
+}
+
+.discount input::placeholder {
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+
+  color: #47bbff;
+}
+
+.discount i {
+  margin-top: -2.5rem;
+  margin-left: 0.5rem;
+
+  color: #47bbff;
+}
+
+.cart-price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  padding: 1rem;
+
+  width: 365px;
+  height: 100%;
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  color: #f8f8ff;
+}
+
+.cart-price h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-bottom: 1rem;
+
+  color: #47bbff;
+  border-bottom: 1px solid #696969;
+}
+
+.cart-price .subtotal,
+.cart-price .freight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-top: 2rem;
+}
+
+.cart-price #country {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  text-decoration: underline;
+  cursor: pointer;
+
+  margin-right: auto;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+}
+
+.cart-price .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  border-top: 1px solid #696969;
+}
+
+.cart-price .total p,
+.cart-price .total p:last-child {
+  margin-top: 2rem;
+
+  font-size: 20px;
+}
+
+.cart-price button {
+  width: 100%;
+  height: 40px;
+
+  margin-top: 2rem;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+
+  background-color: #47bbff;
+  border: 2px solid #47bbff;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-price button:hover {
+  transform: scale(1.05);
+}
+
+.cart-price label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+
+  font-weight: 500;
+}
+
+.cart-price label i {
+  font-size: 1rem;
+}

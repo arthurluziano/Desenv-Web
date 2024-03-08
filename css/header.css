@@ -1,0 +1,96 @@
+:root {
+  --header-bg: #1a1a1a;
+  --text-hover-color: #47bbff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+  height: 100px;
+
+  padding: 0 8px;
+
+  background-color: var(--header-bg);
+}
+
+.header-logo img {
+  width: 64px;
+  height: 64px;
+
+  padding: 0.5rem;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  transition: all 0.3s ease;
+}
+
+.header-logo img:hover {
+  background-color: var(--text-hover-color);
+}
+
+.header-logo {
+  border-radius: 50%;
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 100px;
+
+  gap: 130px;
+  padding-left: 20px;
+}
+
+.icon-header p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 20px;
+}
+
+.icon-header input {
+  width: 420px;
+
+  padding: 0.75rem;
+
+  font-size: 18px;
+  border-radius: 2rem;
+}
+
+.icon-header i {
+  font-size: 32px;
+
+  margin-left: -170px;
+  cursor: pointer;
+}
+
+.links-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 1.5rem;
+}
+
+.links-header a {
+  font-size: 1.10rem;
+
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links-header a:hover {
+  color: var(--text-hover-color);
+}
+
+.links-header i {
+  display: none;
+}
