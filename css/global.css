@@ -33,6 +33,26 @@ header {
   background-color: var(--header-bg);
 }
 
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0 1rem;
+}
+
+.header-logo a {
+  text-decoration: none;
+
+  color: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.header-logo a:hover {
+  color: #47bbff;
+}
+
 .header-logo img {
   width: 64px;
   height: 64px;
@@ -43,14 +63,15 @@ header {
   background-color: #ffffff;
 
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .header-logo img:hover {
   background-color: var(--text-hover-color);
 }
 
-.header-logo {
-  border-radius: 50%;
+.header-logo p {
+  font-size: 1.5rem;
 }
 
 .icon-header {
