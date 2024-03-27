@@ -140,7 +140,7 @@ footer {
   flex-direction: column;
 
   width: 100%;
-  height: 200px;
+  height: 250px;
 
   background-color: #1a1a1a;
   color: #ffffff;
@@ -178,23 +178,52 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 
-  gap: 8px;
-
-  width: 400px;
+  width: 100%;
 }
 
-.politycs p {
+.politycs table {
   font-size: 12px;
 }
 
-.politycs p #whatsapp {
-  color: #47ff50;
+.politycs table tr {
+  display: flex;
+
+  gap: 12px;
+  height: 28px;
 }
 
-.politycs p #email {
+.politycs table td {
+  width: 200px;
+}
+
+td.names {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  color: #47bbff;
+  text-align: right;
+}
+
+td.emails,
+td.numbers {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  i {
+    font-size: 18px;
+  }
+}
+
+td.emails {
   color: #ff4747;
+}
+
+td.numbers {
+  color: #47ff47;
 }
 
 footer label {
